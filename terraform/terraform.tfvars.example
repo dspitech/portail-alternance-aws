@@ -3,7 +3,7 @@ environment  = "dev"
 region       = "eu-west-3"
 
 # Adresse du premier compte admin (recevra un mot de passe temporaire Cognito)
-admin_email = "pape.lo@estiam.com"
+admin_email = "gestion12@gmail.com"
 
 domaines = ["Cloud", "Cyber", "Archi", "Web", "General"]
 
