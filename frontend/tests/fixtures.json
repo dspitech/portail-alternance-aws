@@ -1,0 +1,304 @@
+{
+ "cid": "e675e897-322f-42a3-9ab0-88c68ad71df8",
+ "oid": "72795460-7958-4865-85a0-9e0b14834228",
+ "admin": {
+  "me": {
+   "email": "admin@ecole.com",
+   "role": "admin",
+   "groups": [
+    "Admins"
+   ],
+   "is_admin": true,
+   "is_staff": true,
+   "domaines_disponibles": [
+    "Cloud",
+    "Cyber",
+    "General"
+   ]
+  },
+  "offres": [
+   {
+    "ID": "72795460-7958-4865-85a0-9e0b14834228",
+    "NomFichier": "Dev Cloud",
+    "Entreprise": "Acme",
+    "Lieu": "Paris",
+    "Duree": "12 mois",
+    "Rythme": "3j/2j",
+    "Description": "",
+    "URL": "",
+    "DateLimite": "2099-12-31",
+    "Statut": "Ouverte",
+    "CreeLe": "2026-09-28T18:33:38+00:00",
+    "DatePublication": "28/09/2026 à 18:33 UTC",
+    "Source": "dashboard",
+    "OwnerEmail": "admin@ecole.com",
+    "Titre": "Dev Cloud",
+    "Domaine": "Cloud",
+    "NbCandidatures": 1
+   },
+   {
+    "ID": "dd67b4be-1cdd-4983-963c-6c4d23c0a850",
+    "NomFichier": "Analyste SOC",
+    "Entreprise": "",
+    "Lieu": "",
+    "Duree": "",
+    "Rythme": "",
+    "Description": "",
+    "URL": "",
+    "DateLimite": "",
+    "Statut": "Ouverte",
+    "CreeLe": "2026-09-28T18:33:38+00:00",
+    "DatePublication": "28/09/2026 à 18:33 UTC",
+    "Source": "dashboard",
+    "OwnerEmail": "rh@acme.com",
+    "Titre": "Analyste SOC",
+    "Domaine": "Cyber",
+    "NbCandidatures": 0
+   }
+  ],
+  "candidatures": [
+   {
+    "ID": "e675e897-322f-42a3-9ab0-88c68ad71df8",
+    "OffreID": "72795460-7958-4865-85a0-9e0b14834228",
+    "OffreTitre": "Dev Cloud",
+    "OffreDomaine": "Cloud",
+    "EtudiantEmail": "jean.dupont@ecole.com",
+    "EtudiantNom": "Jean Dupont",
+    "Statut": "Entretien",
+    "DateCandidature": "2026-09-28T18:33:38+00:00",
+    "DateMaj": "2026-09-28T18:33:38+00:00",
+    "Message": "Motivé",
+    "NotesInternes": "Bon profil",
+    "OffreEntreprise": "Acme",
+    "HasCv": true,
+    "HasLettre": false
+   }
+  ],
+  "etudiants": [
+   {
+    "Email": "jean.dupont@ecole.com",
+    "Nom": "Jean Dupont",
+    "Domaines": [
+     "Cloud",
+     "General"
+    ],
+    "DateAjout": "2026-09-28T18:33:38+00:00"
+   }
+  ],
+  "stats": {
+   "total_offres": 2,
+   "offres_ouvertes": 2,
+   "total_etudiants": 1,
+   "total_candidatures": 1,
+   "candidatures_par_statut": {
+    "Entretien": 1
+   },
+   "candidatures_par_domaine": {
+    "Cloud": 1
+   },
+   "offres_par_domaine": {
+    "Cloud": 1,
+    "Cyber": 1
+   },
+   "taux_acceptation": null,
+   "delai_moyen_jours": null,
+   "offres_sans_candidature": [
+    {
+     "ID": "dd67b4be-1cdd-4983-963c-6c4d23c0a850",
+     "Titre": "Analyste SOC",
+     "Domaine": "Cyber"
+    }
+   ],
+   "nb_offres_sans_candidature": 1
+  },
+  "notifications": [
+   {
+    "ID": "c03040cc-0731-4af7-8a29-7df1023f8f7c",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Type": "nouvelle_offre",
+    "OffreID": "72795460-7958-4865-85a0-9e0b14834228",
+    "Titre": "Dev Cloud",
+    "Domaine": "Cloud",
+    "Destinataires": 1,
+    "Acteur": "admin@ecole.com"
+   },
+   {
+    "ID": "e2a4c58d-6851-465d-a3ae-81ad852b1c61",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Type": "statut",
+    "OffreID": "72795460-7958-4865-85a0-9e0b14834228",
+    "Titre": "Dev Cloud → Entretien",
+    "Domaine": "Cloud",
+    "Destinataires": 1,
+    "Acteur": "admin@ecole.com"
+   }
+  ],
+  "audit": [
+   {
+    "ID": "22154455-0c61-4933-a97f-b4298b14e828",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Acteur": "admin@ecole.com",
+    "Action": "candidature.statut",
+    "Cible": "e675e897-322f-42a3-9ab0-88c68ad71df8",
+    "Details": "Reçue -> Entretien"
+   },
+   {
+    "ID": "4f4ecdf6-087e-4c31-9ddd-d3e6ee830be6",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Acteur": "admin@ecole.com",
+    "Action": "candidature.notes",
+    "Cible": "e675e897-322f-42a3-9ab0-88c68ad71df8",
+    "Details": ""
+   },
+   {
+    "ID": "6a533a9a-fdda-4386-a96f-ef76911567a1",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Acteur": "rh@acme.com",
+    "Action": "offre.creer",
+    "Cible": "dd67b4be-1cdd-4983-963c-6c4d23c0a850",
+    "Details": "Analyste SOC"
+   },
+   {
+    "ID": "b9906001-738d-436b-be9d-fd5dd0c3cb67",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Acteur": "admin@ecole.com",
+    "Action": "etudiant.ajouter",
+    "Cible": "jean.dupont@ecole.com",
+    "Details": "Cloud,General"
+   },
+   {
+    "ID": "c389491a-72be-4a25-8cb0-a5537172d160",
+    "Date": "2026-09-28T18:33:38+00:00",
+    "Acteur": "admin@ecole.com",
+    "Action": "offre.creer",
+    "Cible": "72795460-7958-4865-85a0-9e0b14834228",
+    "Details": "Dev Cloud"
+   }
+  ],
+  "candidatures/e675e897-322f-42a3-9ab0-88c68ad71df8/documents": {
+   "cv": "https://docs.s3.eu-west-3.amazonaws.com/documents/f8730cb47deef30b/36f9ed27b5a64b318614f076c6616a5c-cv.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=x%2F20260928%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20260928T183338Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d148afb12e3692e785d018514dec4fdeca908ff68b192521e094ff6b4999da4d",
+   "lettre": null,
+   "message": "Motivé"
+  }
+ },
+ "recruteur": {
+  "me": {
+   "email": "rh@acme.com",
+   "role": "recruteur",
+   "groups": [
+    "Recruteurs"
+   ],
+   "is_admin": false,
+   "is_staff": true,
+   "domaines_disponibles": [
+    "Cloud",
+    "Cyber",
+    "General"
+   ]
+  },
+  "offres": [
+   {
+    "ID": "dd67b4be-1cdd-4983-963c-6c4d23c0a850",
+    "NomFichier": "Analyste SOC",
+    "Entreprise": "",
+    "Lieu": "",
+    "Duree": "",
+    "Rythme": "",
+    "Description": "",
+    "URL": "",
+    "DateLimite": "",
+    "Statut": "Ouverte",
+    "CreeLe": "2026-09-28T18:33:38+00:00",
+    "DatePublication": "28/09/2026 à 18:33 UTC",
+    "Source": "dashboard",
+    "OwnerEmail": "rh@acme.com",
+    "Titre": "Analyste SOC",
+    "Domaine": "Cyber",
+    "NbCandidatures": 0
+   }
+  ],
+  "candidatures": []
+ },
+ "etudiant": {
+  "me": {
+   "email": "jean.dupont@ecole.com",
+   "role": "etudiant",
+   "groups": [
+    "Etudiants"
+   ],
+   "is_admin": false,
+   "is_staff": false,
+   "domaines_disponibles": [
+    "Cloud",
+    "Cyber",
+    "General"
+   ],
+   "profil": {
+    "Email": "jean.dupont@ecole.com",
+    "Nom": "Jean Dupont",
+    "Domaines": [
+     "Cloud",
+     "General"
+    ],
+    "DateAjout": "2026-09-28T18:33:38+00:00"
+   }
+  },
+  "offres": [
+   {
+    "ID": "72795460-7958-4865-85a0-9e0b14834228",
+    "NomFichier": "Dev Cloud",
+    "Entreprise": "Acme",
+    "Lieu": "Paris",
+    "Duree": "12 mois",
+    "Rythme": "3j/2j",
+    "Description": "",
+    "URL": "",
+    "DateLimite": "2099-12-31",
+    "Statut": "Ouverte",
+    "CreeLe": "2026-09-28T18:33:38+00:00",
+    "DatePublication": "28/09/2026 à 18:33 UTC",
+    "Source": "dashboard",
+    "OwnerEmail": "admin@ecole.com",
+    "Titre": "Dev Cloud",
+    "Domaine": "Cloud",
+    "DejaPostule": true
+   },
+   {
+    "ID": "dd67b4be-1cdd-4983-963c-6c4d23c0a850",
+    "NomFichier": "Analyste SOC",
+    "Entreprise": "",
+    "Lieu": "",
+    "Duree": "",
+    "Rythme": "",
+    "Description": "",
+    "URL": "",
+    "DateLimite": "",
+    "Statut": "Ouverte",
+    "CreeLe": "2026-09-28T18:33:38+00:00",
+    "DatePublication": "28/09/2026 à 18:33 UTC",
+    "Source": "dashboard",
+    "OwnerEmail": "rh@acme.com",
+    "Titre": "Analyste SOC",
+    "Domaine": "Cyber",
+    "DejaPostule": false
+   }
+  ],
+  "candidatures": [
+   {
+    "ID": "e675e897-322f-42a3-9ab0-88c68ad71df8",
+    "OffreID": "72795460-7958-4865-85a0-9e0b14834228",
+    "OffreTitre": "Dev Cloud",
+    "OffreDomaine": "Cloud",
+    "EtudiantEmail": "jean.dupont@ecole.com",
+    "EtudiantNom": "Jean Dupont",
+    "Statut": "Entretien",
+    "DateCandidature": "2026-09-28T18:33:38+00:00",
+    "DateMaj": "2026-09-28T18:33:38+00:00",
+    "Message": "Motivé",
+    "OffreEntreprise": "Acme",
+    "HasCv": true,
+    "HasLettre": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portail Alternance — Connexion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <main class="login-card">
+    <p class="login-eyebrow">Recrutement &amp; Alternance</p>
+    <h1>Portail des offres</h1>
+    <p class="login-sub">Consultez les offres, gérez les candidatures et suivez le vivier étudiant.</p>
+    <button id="btn-login" class="btn-primary">Se connecter</button>
+    <p id="login-error" class="login-error" hidden>Connexion impossible. Réessayez.</p>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    document.getElementById('btn-login').addEventListener('click', () => Auth.redirectToLogin());
+    // Si on revient ici avec une erreur OAuth dans l'URL
+    if (new URLSearchParams(window.location.search).get('error')) {
+      document.getElementById('login-error').hidden = false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "dashboard-tests",
+  "private": true,
+  "scripts": { "test": "node smoke.test.js && node contract.test.js" },
+  "devDependencies": { "jsdom": "^30.1.1" }
+}

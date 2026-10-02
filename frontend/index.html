@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portail Alternance — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Portail Alternance</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-item active" data-view="offres">Offres</button>
+        <button class="nav-item" data-view="candidatures">Candidatures</button>
+        <button class="nav-item" data-view="etudiants" data-roles="admin">Étudiants</button>
+        <button class="nav-item" data-view="notifications" data-roles="admin">Notifications</button>
+        <button class="nav-item" data-view="stats" data-roles="admin">Statistiques</button>
+        <button class="nav-item" data-view="audit" data-roles="admin">Journal d'audit</button>
+        <button class="nav-item" data-view="profil" data-roles="etudiant">Mon profil</button>
+      </nav>
+      <div class="sidebar-foot">
+        <p id="user-email" class="user-email"></p>
+        <p id="user-role" class="user-role"></p>
+        <button id="btn-logout" class="link-btn">Se déconnecter</button>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <section id="view-offres" class="view">
+        <header class="view-head">
+          <div><h1>Offres</h1><p class="view-sub" id="offres-sub">Offres publiées.</p></div>
+          <button class="btn-primary" data-action="offre-nouvelle" data-roles="admin,recruteur">Nouvelle offre</button>
+        </header>
+        <div id="offres-table"></div>
+      </section>
+
+      <section id="view-candidatures" class="view hidden">
+        <header class="view-head">
+          <div><h1>Candidatures</h1><p class="view-sub" id="candidatures-sub">Suivi des candidatures.</p></div>
+          <button class="btn-secondary" data-action="cand-export" data-roles="admin,recruteur">Exporter en CSV</button>
+        </header>
+        <div id="candidatures-table"></div>
+      </section>
+
+      <section id="view-etudiants" class="view hidden">
+        <header class="view-head">
+          <div><h1>Étudiants</h1><p class="view-sub">Vivier étudiant et domaines suivis.</p></div>
+          <div class="head-actions">
+            <button class="btn-secondary" data-action="staff-creer">Créer un compte admin / recruteur</button>
+            <button class="btn-secondary" data-action="etudiant-import">Importer un CSV</button>
+            <button class="btn-primary" data-action="etudiant-ajouter">Ajouter un étudiant</button>
+          </div>
+        </header>
+        <div id="etudiants-table"></div>
+      </section>
+
+      <section id="view-notifications" class="view hidden">
+        <header class="view-head">
+          <div><h1>Notifications</h1><p class="view-sub">Historique des envois. Pour les alertes de nouvelle offre, le nombre indique les étudiants du domaine (pas les abonnements SNS confirmés).</p></div>
+        </header>
+        <div id="notifications-table"></div>
+      </section>
+
+      <section id="view-stats" class="view hidden">
+        <header class="view-head">
+          <div><h1>Statistiques</h1><p class="view-sub">Vue d'ensemble de l'activité.</p></div>
+        </header>
+        <div id="stats-content"></div>
+      </section>
+
+      <section id="view-audit" class="view hidden">
+        <header class="view-head">
+          <div><h1>Journal d'audit</h1><p class="view-sub">Qui a fait quoi, et quand.</p></div>
+        </header>
+        <div id="audit-table"></div>
+      </section>
+
+      <section id="view-profil" class="view hidden">
+        <header class="view-head">
+          <div><h1>Mon profil</h1><p class="view-sub">Choisissez les domaines dont vous voulez recevoir les alertes.</p></div>
+        </header>
+        <div id="profil-content" class="profil-box"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <input type="file" id="csv-file" accept=".csv,.txt,text/csv" hidden />
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <div id="modal" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="modal-title"></h2>
+        <button class="link-btn" data-action="modal-close">Fermer</button>
+      </div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

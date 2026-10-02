@@ -1,0 +1,16 @@
+project_name = "alternance-alerts"
+environment  = "dev"
+region       = "eu-west-3"
+
+# Adresse du premier compte admin (recevra un mot de passe temporaire Cognito)
+admin_email = "pape.lo@estiam.com"
+
+domaines = ["Cloud", "Cyber", "Archi", "Web", "General"]
+
+# --- Options ---
+# sender_email      = "recrutement@ecole.com"   # défaut : admin_email
+# mfa_configuration = "ON"                      # OFF | OPTIONAL | ON (obligatoire pour TOUS)
+# ses_sandbox_mode  = true                      # false une fois sorti du sandbox SES
+# rappel_jours      = 3
+# digest_cron       = "cron(0 7 ? * MON *)"     # lundi 07:00 UTC
+# rappels_cron      = "cron(0 8 * * ? *)"       # tous les jours 08:00 UTC
